@@ -28,3 +28,5 @@ const SearchForm = (props) => {
     </form>
   );
 };
+
+export default SearchForm;
