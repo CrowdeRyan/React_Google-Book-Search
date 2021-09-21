@@ -65,3 +65,4 @@ const SavedResult = (props) => {
     </div>
   );
 };
+export default SavedResult;
