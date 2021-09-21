@@ -11,7 +11,6 @@ export function Row({ fluid, children }) {
 }
 
 // This Col component lets us size bootstrap columns with less syntax
-
 export function Col({ size, children }) {
   return (
     <div
