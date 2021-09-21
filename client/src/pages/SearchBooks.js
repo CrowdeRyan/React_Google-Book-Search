@@ -19,7 +19,7 @@ class SearchBooks extends Component {
     this.setState({ search: event.target.value });
   };
 
-  //function for submit button of the search form
+  //function for the submit button of the search form
   handleFormSubmit = (event) => {
     event.preventDefault();
     // once it clicks it connects to the google book api with the search value
@@ -28,7 +28,7 @@ class SearchBooks extends Component {
         if (res.data.items === "error") {
           throw new Error(res.data.items);
         } else {
-          // store response in a array
+          // store response in an array
           let results = res.data.items;
           //map through the array
           results = results.map((result) => {
@@ -50,8 +50,8 @@ class SearchBooks extends Component {
       })
       .catch((err) => this.setState({ error: err.items }));
   };
+
   handleSavedButton = (event) => {
-    // console.log(event)
     event.preventDefault();
     console.log(this.state.books);
     let savedBooks = this.state.books.filter(
@@ -91,3 +91,5 @@ class SearchBooks extends Component {
     );
   }
 }
+
+export default SearchBooks;
