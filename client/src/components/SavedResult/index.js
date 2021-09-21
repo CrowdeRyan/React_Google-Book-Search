@@ -42,6 +42,21 @@ const SavedResult = (props) => {
                     </Row>
                   </Col>
                 </Row>
+                <br></br>
+                <Row className="buttonDiv ">
+                  <button
+                    className="deleteBook btn btn-danger"
+                    id={savedbook._id}
+                    onClick={() => props.handleDeleteButton(savedbook._id)}
+                  >
+                    Delete Book
+                  </button>
+                  <a href={savedbook.link} target="_blank" rel="noreferrer">
+                    <button className="viewBook btn btn-success">
+                      View Book
+                    </button>
+                  </a>
+                </Row>
               </li>
             );
           })}
