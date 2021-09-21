@@ -24,12 +24,11 @@ const SearchResult = (props) => {
                   id={book.title + "Card"}
                   key={book._id}
                 >
-                  {/* col-3 show image of the book */}
                   <Col size="2" className="bookImage">
                     <img src={book.image} alt={book.title} />
                   </Col>
                   <Col size="1" className="emptyCol" />
-                  {/* col-9 show information of the book */}
+
                   <Col size="9" className="bookInfo">
                     <Row>
                       <h3 className="bookTitle">{book.title}</h3>
@@ -51,7 +50,7 @@ const SearchResult = (props) => {
                   >
                     Save Book
                   </button>
-                  <a href={book.link} target="_blank">
+                  <a href={book.link} target="_blank" without rel="noreferrer">
                     <button className="viewBook btn btn-success">
                       View Book
                     </button>
