@@ -13,4 +13,9 @@ class SearchBooks extends Component {
     error: "",
     message: "",
   };
+
+  //function to take value of what enter in the search bar
+  handleInputChange = (event) => {
+    this.setState({ search: event.target.value });
+  };
 }
