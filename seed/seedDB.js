@@ -12,3 +12,14 @@ const bookSeed = {
   link: "http://books.google.com/books?id=sazytgAACAAJ&dq=title:The+Hunger+Games&hl=&source=gbs_api",
   title: "The Hunger Games",
 };
+
+db.Book.remove({})
+  .then(() => db.Books.collection.insertMany(bookSeed))
+  .then((data) => {
+    console.log(data.result.n + "records inserted");
+    process.exit(0);
+  })
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
