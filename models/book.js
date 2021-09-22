@@ -1,4 +1,2 @@
-const { Schema, model } = require("mongoose");
-const bookSchema = new Schema({
-    
-});
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
