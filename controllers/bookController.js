@@ -1,1 +1,1 @@
-module.exports = {};
+const db = require("../models");
