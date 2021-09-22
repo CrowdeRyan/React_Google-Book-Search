@@ -9,3 +9,5 @@ const bookSchema = new Schema({
   link: { type: String, trim: true },
   date: { type: Date, default: Date.now },
 });
+
+const Book = mongoose.model("book", bookSchema);
