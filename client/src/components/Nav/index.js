@@ -2,7 +2,7 @@ import React from "react";
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-primary bg-primary">
+    <nav className="navbar navbar-expand-lg navbar-primary bg-black">
       <a className="navbar-brand" href="/">
         <h2 className="text-white">React Google Book Search</h2>
       </a>
